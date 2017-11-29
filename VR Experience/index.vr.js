@@ -25,7 +25,7 @@ export default class WelcomeToVR extends React.Component {
       this.state.bounceValue,
       {
         toValue: 400,
-        duration: 10000000,
+        duration: 10,
       }
     ).start(this.rotate);
   }
@@ -33,7 +33,7 @@ export default class WelcomeToVR extends React.Component {
   render() {
     return (
       <View>
-        <Pano source={asset('chess-world.jpg')}/>
+        <Pano source={asset('space-good.jpg')}/>
         
 		<AnimatedModel style={{ 
 		color: '#af1e23',
