@@ -5,27 +5,46 @@ import {
   Pano,
   Text,
   View,
+  Model,
+  Animated,
 } from 'react-vr';
 
+const AnimatedModel = Animated.createAnimatedComponent(Model);
+
 export default class WelcomeToVR extends React.Component {
+	state = {
+		bounceValue: new Animated.Value(0)
+	}
+	
+	componentDidMount() {
+    this.rotate();
+  }
+	
+	rotate(){
+    Animated.spring(
+      this.state.bounceValue,
+      {
+        toValue: 400,
+        duration: 10000000,
+      }
+    ).start(this.rotate);
+  }
+	
   render() {
     return (
       <View>
-        <Pano source={asset('sith_background.jpg')}/>
-        <Text
-          style={{
-            backgroundColor: '#777879',
-            fontSize: 0.8,
-            fontWeight: '400',
-            layoutOrigin: [0.5, 0.5],
-            paddingLeft: 0.2,
-            paddingRight: 0.2,
-            textAlign: 'center',
-            textAlignVertical: 'center',
-            transform: [{translate: [0, 0, -3]}],
-          }}>
-          pat
-        </Text>
+        <Pano source={asset('chess-world.jpg')}/>
+        
+		<AnimatedModel style={{ 
+		color: '#af1e23',
+		transform: [ {
+				translate: [0, 0, -10]}, 
+				{rotateZ: this.state.bounceValue}
+				 ], }
+				} 	
+				source={{obj:asset('astronaut.obj'), mtl:asset('astronaut.mtl') }} lit={true} />
+		
+		
       </View>
     );
   }
