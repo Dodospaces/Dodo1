@@ -21,11 +21,8 @@ Ein weiterer wichtiger Punkt unseres Projektes ist die Interaktion. Innerhalb un
 
 >Verwendete Technologien
 
-Unity
-Blender
-Ableton Live
+Unity, Blender, Ableton Live
 
 >Zum Austausch
 
-Trello
-GitHub
+Trello, GitHub
