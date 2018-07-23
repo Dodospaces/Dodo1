@@ -19,10 +19,12 @@ Um Rezipierende in ihren Emotionen innerhalb von VR zu beeinflussen, gehört fü
 Ein weiterer wichtiger Punkt unseres Projektes ist die Interaktion. Innerhalb unserer VR-Anwendung findet man einige Punkte an denen den Rezipierenden eine sehr viel aktivere Haltung zugeschrieben wird. Das Moment der Interaktion spiegelt eine weitere Dimension der Virtual Reality wieder, weswegen wir in unserem Projekt Space is only noise nicht darauf verzichten wollen. Es verleiht den Rezipierenden eine gewisse Entscheidungsfreiheit, und hat den Vorteil, dass die gesamte Projekterfahrung persönlicher wird, da das eigene Handeln die fremd konstruierte Welt beeinflusst, und verändern zu scheint.
 
 >Verwendete Technologien
+
 Unity
 Blender
 Ableton Live
 
 >Zum Austausch
+
 Trello
 GitHub
